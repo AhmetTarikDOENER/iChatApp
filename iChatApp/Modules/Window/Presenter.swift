@@ -9,5 +9,12 @@ final class Presenter: Presentation {
     
     init(router: Routing) {
         self.router = router
+        process()
+    }
+}
+
+private extension Presenter {
+    func process() {
+        router.routeToLandingPage()
     }
 }

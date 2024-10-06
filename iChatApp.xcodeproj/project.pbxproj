@@ -26,12 +26,13 @@
 		45FA94592CB2FA200045C70C /* Landing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FA94512CB2FA200045C70C /* Landing.framework */; };
 		45FA945A2CB2FA200045C70C /* Landing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 45FA94512CB2FA200045C70C /* Landing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45FA945F2CB2FA7C0045C70C /* Landing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45FA945E2CB2FA7B0045C70C /* Landing.storyboard */; };
-		45FA94612CB2FAB00045C70C /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA94602CB2FAB00045C70C /* LandingViewController.swift */; };
 		45FA94652CB2FB210045C70C /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA94642CB2FB210045C70C /* Builder.swift */; };
 		45FA946E2CB2FB990045C70C /* Utility.h in Headers */ = {isa = PBXBuildFile; fileRef = 45FA946D2CB2FB990045C70C /* Utility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45FA94712CB2FB990045C70C /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FA946B2CB2FB990045C70C /* Utility.framework */; };
 		45FA94722CB2FB990045C70C /* Utility.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 45FA946B2CB2FB990045C70C /* Utility.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45FA94782CB2FBD50045C70C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA94772CB2FBD50045C70C /* UIViewController+Extension.swift */; };
+		45FA94792CB307D50045C70C /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA94602CB2FAB00045C70C /* LandingViewController.swift */; };
+		45FA947D2CB3124A0045C70C /* Landing.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FA947C2CB3124A0045C70C /* Landing.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		45FA946B2CB2FB990045C70C /* Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45FA946D2CB2FB990045C70C /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 		45FA94772CB2FBD50045C70C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		45FA947C2CB3124A0045C70C /* Landing.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Landing.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 				45FA945E2CB2FA7B0045C70C /* Landing.storyboard */,
 				45FA94602CB2FAB00045C70C /* LandingViewController.swift */,
 				45FA94642CB2FB210045C70C /* Builder.swift */,
+				45FA947C2CB3124A0045C70C /* Landing.xcassets */,
 			);
 			path = Landing;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45FA945F2CB2FA7C0045C70C /* Landing.storyboard in Resources */,
+				45FA947D2CB3124A0045C70C /* Landing.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +419,6 @@
 			files = (
 				45FA94202CB2F3870045C70C /* ViewController.swift in Sources */,
 				45FA941C2CB2F3870045C70C /* AppDelegate.swift in Sources */,
-				45FA94612CB2FAB00045C70C /* LandingViewController.swift in Sources */,
 				45FA941E2CB2F3870045C70C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +440,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45FA94552CB2FA200045C70C /* Landing.docc in Sources */,
+				45FA94792CB307D50045C70C /* LandingViewController.swift in Sources */,
 				45FA94652CB2FB210045C70C /* Builder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
