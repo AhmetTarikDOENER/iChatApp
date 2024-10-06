@@ -13,7 +13,39 @@
 		45FA94232CB2F3870045C70C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 45FA94222CB2F3870045C70C /* Base */; };
 		45FA94252CB2F3880045C70C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FA94242CB2F3880045C70C /* Assets.xcassets */; };
 		45FA94282CB2F3880045C70C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 45FA94272CB2F3880045C70C /* Base */; };
+		45FA94392CB2F4AC0045C70C /* Window.docc in Sources */ = {isa = PBXBuildFile; fileRef = 45FA94382CB2F4AC0045C70C /* Window.docc */; };
+		45FA943A2CB2F4AC0045C70C /* Window.h in Headers */ = {isa = PBXBuildFile; fileRef = 45FA94372CB2F4AC0045C70C /* Window.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45FA943D2CB2F4AC0045C70C /* Window.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FA94352CB2F4AC0045C70C /* Window.framework */; };
+		45FA943E2CB2F4AC0045C70C /* Window.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 45FA94352CB2F4AC0045C70C /* Window.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		45FA94442CB2F5AD0045C70C /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA94432CB2F5AD0045C70C /* Window.swift */; };
+		45FA94462CB2F61B0045C70C /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA94452CB2F61B0045C70C /* Presenter.swift */; };
+		45FA94492CB2F6D20045C70C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA94472CB2F6730045C70C /* Router.swift */; };
+		45FA944B2CB2F7250045C70C /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA944A2CB2F7250045C70C /* Builder.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45FA943B2CB2F4AC0045C70C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45FA94102CB2F3870045C70C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45FA94342CB2F4AC0045C70C;
+			remoteInfo = Window;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		45FA94422CB2F4AC0045C70C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				45FA943E2CB2F4AC0045C70C /* Window.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		45FA94182CB2F3870045C70C /* iChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +56,25 @@
 		45FA94242CB2F3880045C70C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45FA94272CB2F3880045C70C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45FA94292CB2F3880045C70C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45FA94352CB2F4AC0045C70C /* Window.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Window.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45FA94372CB2F4AC0045C70C /* Window.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		45FA94382CB2F4AC0045C70C /* Window.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Window.docc; sourceTree = "<group>"; };
+		45FA94432CB2F5AD0045C70C /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		45FA94452CB2F61B0045C70C /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		45FA94472CB2F6730045C70C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		45FA944A2CB2F7250045C70C /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		45FA94152CB2F3870045C70C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45FA943D2CB2F4AC0045C70C /* Window.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45FA94322CB2F4AC0045C70C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				45FA94182CB2F3870045C70C /* iChatApp.app */,
+				45FA94352CB2F4AC0045C70C /* Window.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +104,7 @@
 		45FA941A2CB2F3870045C70C /* iChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				45FA942F2CB2F46C0045C70C /* Modules */,
 				45FA941B2CB2F3870045C70C /* AppDelegate.swift */,
 				45FA941D2CB2F3870045C70C /* SceneDelegate.swift */,
 				45FA941F2CB2F3870045C70C /* ViewController.swift */,
@@ -67,7 +116,39 @@
 			path = iChatApp;
 			sourceTree = "<group>";
 		};
+		45FA942F2CB2F46C0045C70C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				45FA94362CB2F4AC0045C70C /* Window */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		45FA94362CB2F4AC0045C70C /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				45FA94372CB2F4AC0045C70C /* Window.h */,
+				45FA94382CB2F4AC0045C70C /* Window.docc */,
+				45FA94432CB2F5AD0045C70C /* Window.swift */,
+				45FA94452CB2F61B0045C70C /* Presenter.swift */,
+				45FA94472CB2F6730045C70C /* Router.swift */,
+				45FA944A2CB2F7250045C70C /* Builder.swift */,
+			);
+			path = Window;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		45FA94302CB2F4AC0045C70C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45FA943A2CB2F4AC0045C70C /* Window.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		45FA94172CB2F3870045C70C /* iChatApp */ = {
@@ -77,15 +158,35 @@
 				45FA94142CB2F3870045C70C /* Sources */,
 				45FA94152CB2F3870045C70C /* Frameworks */,
 				45FA94162CB2F3870045C70C /* Resources */,
+				45FA94422CB2F4AC0045C70C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				45FA943C2CB2F4AC0045C70C /* PBXTargetDependency */,
 			);
 			name = iChatApp;
 			productName = iChatApp;
 			productReference = 45FA94182CB2F3870045C70C /* iChatApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		45FA94342CB2F4AC0045C70C /* Window */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45FA943F2CB2F4AC0045C70C /* Build configuration list for PBXNativeTarget "Window" */;
+			buildPhases = (
+				45FA94302CB2F4AC0045C70C /* Headers */,
+				45FA94312CB2F4AC0045C70C /* Sources */,
+				45FA94322CB2F4AC0045C70C /* Frameworks */,
+				45FA94332CB2F4AC0045C70C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Window;
+			productName = Window;
+			productReference = 45FA94352CB2F4AC0045C70C /* Window.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +199,9 @@
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					45FA94172CB2F3870045C70C = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					45FA94342CB2F4AC0045C70C = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -116,6 +220,7 @@
 			projectRoot = "";
 			targets = (
 				45FA94172CB2F3870045C70C /* iChatApp */,
+				45FA94342CB2F4AC0045C70C /* Window */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +233,13 @@
 				45FA94252CB2F3880045C70C /* Assets.xcassets in Resources */,
 				45FA94282CB2F3880045C70C /* Base in Resources */,
 				45FA94232CB2F3870045C70C /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45FA94332CB2F4AC0045C70C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +256,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		45FA94312CB2F4AC0045C70C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45FA94492CB2F6D20045C70C /* Router.swift in Sources */,
+				45FA94462CB2F61B0045C70C /* Presenter.swift in Sources */,
+				45FA94392CB2F4AC0045C70C /* Window.docc in Sources */,
+				45FA94442CB2F5AD0045C70C /* Window.swift in Sources */,
+				45FA944B2CB2F7250045C70C /* Builder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45FA943C2CB2F4AC0045C70C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45FA94342CB2F4AC0045C70C /* Window */;
+			targetProxy = 45FA943B2CB2F4AC0045C70C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		45FA94212CB2F3870045C70C /* Main.storyboard */ = {
@@ -288,6 +420,7 @@
 		45FA942D2CB2F3880045C70C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,9 +430,9 @@
 				INFOPLIST_FILE = iChatApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,6 +453,7 @@
 		45FA942E2CB2F3880045C70C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -329,9 +463,9 @@
 				INFOPLIST_FILE = iChatApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -346,6 +480,86 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		45FA94402CB2F4AC0045C70C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = N2G2NDDG29;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmettarik.application.viper.Window;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		45FA94412CB2F4AC0045C70C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = N2G2NDDG29;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmettarik.application.viper.Window;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -366,6 +580,15 @@
 			buildConfigurations = (
 				45FA942D2CB2F3880045C70C /* Debug */,
 				45FA942E2CB2F3880045C70C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45FA943F2CB2F4AC0045C70C /* Build configuration list for PBXNativeTarget "Window" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45FA94402CB2F4AC0045C70C /* Debug */,
+				45FA94412CB2F4AC0045C70C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
