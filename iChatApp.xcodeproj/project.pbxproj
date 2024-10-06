@@ -21,6 +21,17 @@
 		45FA94462CB2F61B0045C70C /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA94452CB2F61B0045C70C /* Presenter.swift */; };
 		45FA94492CB2F6D20045C70C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA94472CB2F6730045C70C /* Router.swift */; };
 		45FA944B2CB2F7250045C70C /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA944A2CB2F7250045C70C /* Builder.swift */; };
+		45FA94552CB2FA200045C70C /* Landing.docc in Sources */ = {isa = PBXBuildFile; fileRef = 45FA94542CB2FA200045C70C /* Landing.docc */; };
+		45FA94562CB2FA200045C70C /* Landing.h in Headers */ = {isa = PBXBuildFile; fileRef = 45FA94532CB2FA200045C70C /* Landing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45FA94592CB2FA200045C70C /* Landing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FA94512CB2FA200045C70C /* Landing.framework */; };
+		45FA945A2CB2FA200045C70C /* Landing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 45FA94512CB2FA200045C70C /* Landing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		45FA945F2CB2FA7C0045C70C /* Landing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45FA945E2CB2FA7B0045C70C /* Landing.storyboard */; };
+		45FA94612CB2FAB00045C70C /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA94602CB2FAB00045C70C /* LandingViewController.swift */; };
+		45FA94652CB2FB210045C70C /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA94642CB2FB210045C70C /* Builder.swift */; };
+		45FA946E2CB2FB990045C70C /* Utility.h in Headers */ = {isa = PBXBuildFile; fileRef = 45FA946D2CB2FB990045C70C /* Utility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45FA94712CB2FB990045C70C /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FA946B2CB2FB990045C70C /* Utility.framework */; };
+		45FA94722CB2FB990045C70C /* Utility.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 45FA946B2CB2FB990045C70C /* Utility.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		45FA94782CB2FBD50045C70C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA94772CB2FBD50045C70C /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +42,20 @@
 			remoteGlobalIDString = 45FA94342CB2F4AC0045C70C;
 			remoteInfo = Window;
 		};
+		45FA94572CB2FA200045C70C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45FA94102CB2F3870045C70C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45FA94502CB2FA200045C70C;
+			remoteInfo = Landing;
+		};
+		45FA946F2CB2FB990045C70C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45FA94102CB2F3870045C70C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45FA946A2CB2FB990045C70C;
+			remoteInfo = Utility;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +65,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				45FA94722CB2FB990045C70C /* Utility.framework in Embed Frameworks */,
+				45FA945A2CB2FA200045C70C /* Landing.framework in Embed Frameworks */,
 				45FA943E2CB2F4AC0045C70C /* Window.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -63,6 +90,15 @@
 		45FA94452CB2F61B0045C70C /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		45FA94472CB2F6730045C70C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		45FA944A2CB2F7250045C70C /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		45FA94512CB2FA200045C70C /* Landing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Landing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45FA94532CB2FA200045C70C /* Landing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Landing.h; sourceTree = "<group>"; };
+		45FA94542CB2FA200045C70C /* Landing.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Landing.docc; sourceTree = "<group>"; };
+		45FA945E2CB2FA7B0045C70C /* Landing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Landing.storyboard; sourceTree = "<group>"; };
+		45FA94602CB2FAB00045C70C /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		45FA94642CB2FB210045C70C /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		45FA946B2CB2FB990045C70C /* Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45FA946D2CB2FB990045C70C /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		45FA94772CB2FBD50045C70C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +106,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45FA94712CB2FB990045C70C /* Utility.framework in Frameworks */,
+				45FA94592CB2FA200045C70C /* Landing.framework in Frameworks */,
 				45FA943D2CB2F4AC0045C70C /* Window.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		45FA94322CB2F4AC0045C70C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45FA944E2CB2FA200045C70C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45FA94682CB2FB990045C70C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -97,6 +149,8 @@
 			children = (
 				45FA94182CB2F3870045C70C /* iChatApp.app */,
 				45FA94352CB2F4AC0045C70C /* Window.framework */,
+				45FA94512CB2FA200045C70C /* Landing.framework */,
+				45FA946B2CB2FB990045C70C /* Utility.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +173,8 @@
 		45FA942F2CB2F46C0045C70C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				45FA94762CB2FBA40045C70C /* Shared */,
+				45FA94522CB2FA200045C70C /* Landing */,
 				45FA94362CB2F4AC0045C70C /* Window */,
 			);
 			path = Modules;
@@ -137,6 +193,35 @@
 			path = Window;
 			sourceTree = "<group>";
 		};
+		45FA94522CB2FA200045C70C /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				45FA94532CB2FA200045C70C /* Landing.h */,
+				45FA94542CB2FA200045C70C /* Landing.docc */,
+				45FA945E2CB2FA7B0045C70C /* Landing.storyboard */,
+				45FA94602CB2FAB00045C70C /* LandingViewController.swift */,
+				45FA94642CB2FB210045C70C /* Builder.swift */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		45FA946C2CB2FB990045C70C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				45FA946D2CB2FB990045C70C /* Utility.h */,
+				45FA94772CB2FBD50045C70C /* UIViewController+Extension.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		45FA94762CB2FBA40045C70C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				45FA946C2CB2FB990045C70C /* Utility */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -145,6 +230,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				45FA943A2CB2F4AC0045C70C /* Window.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45FA944C2CB2FA200045C70C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45FA94562CB2FA200045C70C /* Landing.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45FA94662CB2FB990045C70C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45FA946E2CB2FB990045C70C /* Utility.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +265,8 @@
 			);
 			dependencies = (
 				45FA943C2CB2F4AC0045C70C /* PBXTargetDependency */,
+				45FA94582CB2FA200045C70C /* PBXTargetDependency */,
+				45FA94702CB2FB990045C70C /* PBXTargetDependency */,
 			);
 			name = iChatApp;
 			productName = iChatApp;
@@ -188,6 +291,42 @@
 			productReference = 45FA94352CB2F4AC0045C70C /* Window.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		45FA94502CB2FA200045C70C /* Landing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45FA945B2CB2FA200045C70C /* Build configuration list for PBXNativeTarget "Landing" */;
+			buildPhases = (
+				45FA944C2CB2FA200045C70C /* Headers */,
+				45FA944D2CB2FA200045C70C /* Sources */,
+				45FA944E2CB2FA200045C70C /* Frameworks */,
+				45FA944F2CB2FA200045C70C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Landing;
+			productName = Landing;
+			productReference = 45FA94512CB2FA200045C70C /* Landing.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		45FA946A2CB2FB990045C70C /* Utility */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45FA94732CB2FB990045C70C /* Build configuration list for PBXNativeTarget "Utility" */;
+			buildPhases = (
+				45FA94662CB2FB990045C70C /* Headers */,
+				45FA94672CB2FB990045C70C /* Sources */,
+				45FA94682CB2FB990045C70C /* Frameworks */,
+				45FA94692CB2FB990045C70C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Utility;
+			productName = Utility;
+			productReference = 45FA946B2CB2FB990045C70C /* Utility.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -203,6 +342,13 @@
 					};
 					45FA94342CB2F4AC0045C70C = {
 						CreatedOnToolsVersion = 15.4;
+					};
+					45FA94502CB2FA200045C70C = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					45FA946A2CB2FB990045C70C = {
+						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 					};
 				};
 			};
@@ -221,6 +367,8 @@
 			targets = (
 				45FA94172CB2F3870045C70C /* iChatApp */,
 				45FA94342CB2F4AC0045C70C /* Window */,
+				45FA94502CB2FA200045C70C /* Landing */,
+				45FA946A2CB2FB990045C70C /* Utility */,
 			);
 		};
 /* End PBXProject section */
@@ -243,6 +391,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		45FA944F2CB2FA200045C70C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45FA945F2CB2FA7C0045C70C /* Landing.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45FA94692CB2FB990045C70C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -252,6 +415,7 @@
 			files = (
 				45FA94202CB2F3870045C70C /* ViewController.swift in Sources */,
 				45FA941C2CB2F3870045C70C /* AppDelegate.swift in Sources */,
+				45FA94612CB2FAB00045C70C /* LandingViewController.swift in Sources */,
 				45FA941E2CB2F3870045C70C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +432,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		45FA944D2CB2FA200045C70C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45FA94552CB2FA200045C70C /* Landing.docc in Sources */,
+				45FA94652CB2FB210045C70C /* Builder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45FA94672CB2FB990045C70C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45FA94782CB2FBD50045C70C /* UIViewController+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -275,6 +456,16 @@
 			isa = PBXTargetDependency;
 			target = 45FA94342CB2F4AC0045C70C /* Window */;
 			targetProxy = 45FA943B2CB2F4AC0045C70C /* PBXContainerItemProxy */;
+		};
+		45FA94582CB2FA200045C70C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45FA94502CB2FA200045C70C /* Landing */;
+			targetProxy = 45FA94572CB2FA200045C70C /* PBXContainerItemProxy */;
+		};
+		45FA94702CB2FB990045C70C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45FA946A2CB2FB990045C70C /* Utility */;
+			targetProxy = 45FA946F2CB2FB990045C70C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -563,6 +754,149 @@
 			};
 			name = Release;
 		};
+		45FA945C2CB2FA200045C70C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = N2G2NDDG29;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmettarik.application.viper.Landing;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		45FA945D2CB2FA200045C70C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = N2G2NDDG29;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmettarik.application.viper.Landing;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		45FA94742CB2FB990045C70C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = N2G2NDDG29;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmettarik.application.viper.Utility;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		45FA94752CB2FB990045C70C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = N2G2NDDG29;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmettarik.application.viper.Utility;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -589,6 +923,24 @@
 			buildConfigurations = (
 				45FA94402CB2F4AC0045C70C /* Debug */,
 				45FA94412CB2F4AC0045C70C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45FA945B2CB2FA200045C70C /* Build configuration list for PBXNativeTarget "Landing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45FA945C2CB2FA200045C70C /* Debug */,
+				45FA945D2CB2FA200045C70C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45FA94732CB2FB990045C70C /* Build configuration list for PBXNativeTarget "Utility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45FA94742CB2FB990045C70C /* Debug */,
+				45FA94752CB2FB990045C70C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
