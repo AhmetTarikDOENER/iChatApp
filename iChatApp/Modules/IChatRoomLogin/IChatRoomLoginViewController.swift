@@ -19,7 +19,8 @@ final class IChatRoomLoginViewController: UIViewController {
         super.viewDidLoad()
         presenter = presenterProcuder((
             username: usernameTextField.rx.text.orEmpty.asDriver(),
-            email: emailTextField.rx.text.orEmpty.asDriver()
+            email: emailTextField.rx.text.orEmpty.asDriver(),
+            login: loginButton.rx.tap.asDriver()
         ))
         setupUI()
         setupBinding()

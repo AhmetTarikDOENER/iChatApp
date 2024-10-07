@@ -5,7 +5,8 @@ import Foundation
 protocol Presentation {
     typealias Input = (
         username: Driver<String>,
-        email: Driver<String>
+        email: Driver<String>,
+        login: Driver<Void>
     )
     typealias Output = (
         enableLogin: Driver<Bool>, ()
@@ -16,11 +17,14 @@ protocol Presentation {
 }
 
 final class Presenter: Presentation {
-    typealias UseCases = ()
+    typealias UseCases = (
+        login: (_ username: String, _ email: String) -> Single<()>, Void
+    )
     var input: Input
     var output: Output
     private let useCases: UseCases
     private let router: Routing
+    private let bag = DisposeBag()
     
     init(input: Input, router: Routing, useCases: UseCases) {
         self.input = input
@@ -40,6 +44,13 @@ private extension Presenter {
     }
     
     func process() {
-        
+        input.login
+            .withLatestFrom(Driver.combineLatest(input.username, input.email))
+            .asObservable()
+            .flatMap { [useCases] (username, email) in
+                useCases.login(username, email)
+            }.asDriver(onErrorDriveWith: .never())
+            .drive()
+            .disposed(by: bag)
     }
 }

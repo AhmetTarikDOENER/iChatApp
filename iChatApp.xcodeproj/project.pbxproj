@@ -23,6 +23,21 @@
 		459C482A2CB45E31000377D3 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459C48292CB45E31000377D3 /* Presenter.swift */; };
 		459C482C2CB45FFC000377D3 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459C482B2CB45FFC000377D3 /* Router.swift */; };
 		459C482E2CB469F2000377D3 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459C482D2CB469F2000377D3 /* String+Extension.swift */; };
+		459C48372CB46FD3000377D3 /* UseCases.h in Headers */ = {isa = PBXBuildFile; fileRef = 459C48362CB46FD3000377D3 /* UseCases.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		459C483A2CB46FD3000377D3 /* UseCases.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459C48342CB46FD3000377D3 /* UseCases.framework */; };
+		459C483B2CB46FD3000377D3 /* UseCases.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 459C48342CB46FD3000377D3 /* UseCases.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		459C48412CB47021000377D3 /* AccountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459C483F2CB46FF9000377D3 /* AccountInteractor.swift */; };
+		459C48432CB47094000377D3 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 459C48422CB47094000377D3 /* RxRelay */; };
+		459C48452CB47094000377D3 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 459C48442CB47094000377D3 /* RxSwift */; };
+		459C484E2CB470F1000377D3 /* Models.h in Headers */ = {isa = PBXBuildFile; fileRef = 459C484D2CB470F1000377D3 /* Models.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		459C48512CB470F1000377D3 /* Models.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459C484B2CB470F1000377D3 /* Models.framework */; };
+		459C48522CB470F1000377D3 /* Models.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 459C484B2CB470F1000377D3 /* Models.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		459C48572CB47104000377D3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459C48562CB47104000377D3 /* User.swift */; };
+		459C48602CB47183000377D3 /* IChatRoomService.h in Headers */ = {isa = PBXBuildFile; fileRef = 459C485F2CB47183000377D3 /* IChatRoomService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		459C48632CB47183000377D3 /* IChatRoomService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459C485D2CB47183000377D3 /* IChatRoomService.framework */; };
+		459C48642CB47183000377D3 /* IChatRoomService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 459C485D2CB47183000377D3 /* IChatRoomService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		459C48692CB471A1000377D3 /* IChatRoomWebSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459C48682CB471A1000377D3 /* IChatRoomWebSocketService.swift */; };
+		459C486B2CB472BB000377D3 /* UseCasesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459C486A2CB472BB000377D3 /* UseCasesFactory.swift */; };
 		45FA941C2CB2F3870045C70C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA941B2CB2F3870045C70C /* AppDelegate.swift */; };
 		45FA941E2CB2F3870045C70C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA941D2CB2F3870045C70C /* SceneDelegate.swift */; };
 		45FA94202CB2F3870045C70C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA941F2CB2F3870045C70C /* ViewController.swift */; };
@@ -84,6 +99,41 @@
 			remoteGlobalIDString = 459C47A72CB4131B000377D3;
 			remoteInfo = IChatRoomLogin;
 		};
+		459C48382CB46FD3000377D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45FA94102CB2F3870045C70C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 459C48332CB46FD3000377D3;
+			remoteInfo = UseCases;
+		};
+		459C484F2CB470F1000377D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45FA94102CB2F3870045C70C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 459C484A2CB470F1000377D3;
+			remoteInfo = Models;
+		};
+		459C48612CB47183000377D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45FA94102CB2F3870045C70C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 459C485C2CB47183000377D3;
+			remoteInfo = IChatRoomService;
+		};
+		459C486C2CB4734C000377D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45FA94102CB2F3870045C70C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 459C485C2CB47183000377D3;
+			remoteInfo = IChatRoomService;
+		};
+		459C486E2CB47459000377D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45FA94102CB2F3870045C70C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 459C48332CB46FD3000377D3;
+			remoteInfo = UseCases;
+		};
 		45FA943B2CB2F4AC0045C70C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 45FA94102CB2F3870045C70C /* Project object */;
@@ -114,8 +164,11 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				459C48642CB47183000377D3 /* IChatRoomService.framework in Embed Frameworks */,
 				45FA94722CB2FB990045C70C /* Utility.framework in Embed Frameworks */,
 				45FA945A2CB2FA200045C70C /* Landing.framework in Embed Frameworks */,
+				459C48522CB470F1000377D3 /* Models.framework in Embed Frameworks */,
+				459C483B2CB46FD3000377D3 /* UseCases.framework in Embed Frameworks */,
 				45FA943E2CB2F4AC0045C70C /* Window.framework in Embed Frameworks */,
 				459C47AF2CB4131B000377D3 /* IChatRoomLogin.framework in Embed Frameworks */,
 			);
@@ -134,6 +187,16 @@
 		459C48292CB45E31000377D3 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		459C482B2CB45FFC000377D3 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		459C482D2CB469F2000377D3 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		459C48342CB46FD3000377D3 /* UseCases.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UseCases.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		459C48362CB46FD3000377D3 /* UseCases.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UseCases.h; sourceTree = "<group>"; };
+		459C483F2CB46FF9000377D3 /* AccountInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInteractor.swift; sourceTree = "<group>"; };
+		459C484B2CB470F1000377D3 /* Models.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Models.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		459C484D2CB470F1000377D3 /* Models.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Models.h; sourceTree = "<group>"; };
+		459C48562CB47104000377D3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		459C485D2CB47183000377D3 /* IChatRoomService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IChatRoomService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		459C485F2CB47183000377D3 /* IChatRoomService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IChatRoomService.h; sourceTree = "<group>"; };
+		459C48682CB471A1000377D3 /* IChatRoomWebSocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IChatRoomWebSocketService.swift; sourceTree = "<group>"; };
+		459C486A2CB472BB000377D3 /* UseCasesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCasesFactory.swift; sourceTree = "<group>"; };
 		45FA94182CB2F3870045C70C /* iChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45FA941B2CB2F3870045C70C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45FA941D2CB2F3870045C70C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -172,12 +235,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		459C48312CB46FD3000377D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				459C48452CB47094000377D3 /* RxSwift in Frameworks */,
+				459C48432CB47094000377D3 /* RxRelay in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		459C48482CB470F1000377D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		459C485A2CB47183000377D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		45FA94152CB2F3870045C70C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				459C48632CB47183000377D3 /* IChatRoomService.framework in Frameworks */,
 				459C481F2CB458D5000377D3 /* RxSwift in Frameworks */,
 				459C48282CB4599D000377D3 /* SocketIO in Frameworks */,
+				459C48512CB470F1000377D3 /* Models.framework in Frameworks */,
+				459C483A2CB46FD3000377D3 /* UseCases.framework in Frameworks */,
 				459C481D2CB458D5000377D3 /* RxRelay in Frameworks */,
 				459C481B2CB458D5000377D3 /* RxCocoa in Frameworks */,
 			);
@@ -228,10 +317,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		459C48352CB46FD3000377D3 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				459C48362CB46FD3000377D3 /* UseCases.h */,
+				459C483F2CB46FF9000377D3 /* AccountInteractor.swift */,
+				459C486A2CB472BB000377D3 /* UseCasesFactory.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		459C484C2CB470F1000377D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				459C484D2CB470F1000377D3 /* Models.h */,
+				459C48562CB47104000377D3 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		459C485E2CB47183000377D3 /* IChatRoomService */ = {
+			isa = PBXGroup;
+			children = (
+				459C485F2CB47183000377D3 /* IChatRoomService.h */,
+				459C48682CB471A1000377D3 /* IChatRoomWebSocketService.swift */,
+			);
+			path = IChatRoomService;
+			sourceTree = "<group>";
+		};
 		45FA940F2CB2F3870045C70C = {
 			isa = PBXGroup;
 			children = (
 				45FA941A2CB2F3870045C70C /* iChatApp */,
+				459C484C2CB470F1000377D3 /* Models */,
+				459C485E2CB47183000377D3 /* IChatRoomService */,
 				45FA94192CB2F3870045C70C /* Products */,
 				459C48012CB456FC000377D3 /* Frameworks */,
 			);
@@ -245,6 +364,9 @@
 				45FA94512CB2FA200045C70C /* Landing.framework */,
 				45FA946B2CB2FB990045C70C /* Utility.framework */,
 				459C47A82CB4131B000377D3 /* IChatRoomLogin.framework */,
+				459C48342CB46FD3000377D3 /* UseCases.framework */,
+				459C484B2CB470F1000377D3 /* Models.framework */,
+				459C485D2CB47183000377D3 /* IChatRoomService.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -270,6 +392,7 @@
 				459C47A92CB4131B000377D3 /* IChatRoomLogin */,
 				45FA94522CB2FA200045C70C /* Landing */,
 				45FA94762CB2FBA40045C70C /* Shared */,
+				459C48352CB46FD3000377D3 /* UseCases */,
 				45FA94362CB2F4AC0045C70C /* Window */,
 			);
 			path = Modules;
@@ -330,6 +453,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		459C482F2CB46FD3000377D3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				459C48372CB46FD3000377D3 /* UseCases.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		459C48462CB470F1000377D3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				459C484E2CB470F1000377D3 /* Models.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		459C48582CB47183000377D3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				459C48602CB47183000377D3 /* IChatRoomService.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		45FA94302CB2F4AC0045C70C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -369,6 +516,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				459C486F2CB47459000377D3 /* PBXTargetDependency */,
 				459C47BD2CB414C6000377D3 /* PBXTargetDependency */,
 			);
 			name = IChatRoomLogin;
@@ -379,6 +527,65 @@
 			);
 			productName = IChatRoomLogin;
 			productReference = 459C47A82CB4131B000377D3 /* IChatRoomLogin.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		459C48332CB46FD3000377D3 /* UseCases */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 459C483C2CB46FD3000377D3 /* Build configuration list for PBXNativeTarget "UseCases" */;
+			buildPhases = (
+				459C482F2CB46FD3000377D3 /* Headers */,
+				459C48302CB46FD3000377D3 /* Sources */,
+				459C48312CB46FD3000377D3 /* Frameworks */,
+				459C48322CB46FD3000377D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				459C486D2CB4734C000377D3 /* PBXTargetDependency */,
+			);
+			name = UseCases;
+			packageProductDependencies = (
+				459C48422CB47094000377D3 /* RxRelay */,
+				459C48442CB47094000377D3 /* RxSwift */,
+			);
+			productName = UseCases;
+			productReference = 459C48342CB46FD3000377D3 /* UseCases.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		459C484A2CB470F1000377D3 /* Models */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 459C48532CB470F1000377D3 /* Build configuration list for PBXNativeTarget "Models" */;
+			buildPhases = (
+				459C48462CB470F1000377D3 /* Headers */,
+				459C48472CB470F1000377D3 /* Sources */,
+				459C48482CB470F1000377D3 /* Frameworks */,
+				459C48492CB470F1000377D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Models;
+			productName = Models;
+			productReference = 459C484B2CB470F1000377D3 /* Models.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		459C485C2CB47183000377D3 /* IChatRoomService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 459C48652CB47183000377D3 /* Build configuration list for PBXNativeTarget "IChatRoomService" */;
+			buildPhases = (
+				459C48582CB47183000377D3 /* Headers */,
+				459C48592CB47183000377D3 /* Sources */,
+				459C485A2CB47183000377D3 /* Frameworks */,
+				459C485B2CB47183000377D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IChatRoomService;
+			productName = IChatRoomService;
+			productReference = 459C485D2CB47183000377D3 /* IChatRoomService.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		45FA94172CB2F3870045C70C /* iChatApp */ = {
@@ -397,6 +604,9 @@
 				45FA94582CB2FA200045C70C /* PBXTargetDependency */,
 				45FA94702CB2FB990045C70C /* PBXTargetDependency */,
 				459C47AD2CB4131B000377D3 /* PBXTargetDependency */,
+				459C48392CB46FD3000377D3 /* PBXTargetDependency */,
+				459C48502CB470F1000377D3 /* PBXTargetDependency */,
+				459C48622CB47183000377D3 /* PBXTargetDependency */,
 			);
 			name = iChatApp;
 			packageProductDependencies = (
@@ -480,6 +690,17 @@
 						CreatedOnToolsVersion = 15.4;
 						LastSwiftMigration = 1540;
 					};
+					459C48332CB46FD3000377D3 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					459C484A2CB470F1000377D3 = {
+						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
+					};
+					459C485C2CB47183000377D3 = {
+						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
+					};
 					45FA94172CB2F3870045C70C = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -517,6 +738,9 @@
 				45FA94502CB2FA200045C70C /* Landing */,
 				45FA946A2CB2FB990045C70C /* Utility */,
 				459C47A72CB4131B000377D3 /* IChatRoomLogin */,
+				459C48332CB46FD3000377D3 /* UseCases */,
+				459C484A2CB470F1000377D3 /* Models */,
+				459C485C2CB47183000377D3 /* IChatRoomService */,
 			);
 		};
 /* End PBXProject section */
@@ -528,6 +752,27 @@
 			files = (
 				459C47D32CB423E4000377D3 /* IChatRoomLogin.xcassets in Resources */,
 				459C47B42CB41357000377D3 /* IChatRoomLogin.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		459C48322CB46FD3000377D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		459C48492CB470F1000377D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		459C485B2CB47183000377D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,6 +820,31 @@
 				459C482A2CB45E31000377D3 /* Presenter.swift in Sources */,
 				459C47B62CB41383000377D3 /* IChatRoomLoginViewController.swift in Sources */,
 				459C47E12CB42DBB000377D3 /* Builder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		459C48302CB46FD3000377D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				459C486B2CB472BB000377D3 /* UseCasesFactory.swift in Sources */,
+				459C48412CB47021000377D3 /* AccountInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		459C48472CB470F1000377D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				459C48572CB47104000377D3 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		459C48592CB47183000377D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				459C48692CB471A1000377D3 /* IChatRoomWebSocketService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,6 +916,31 @@
 			isa = PBXTargetDependency;
 			target = 459C47A72CB4131B000377D3 /* IChatRoomLogin */;
 			targetProxy = 459C47E32CB42DEA000377D3 /* PBXContainerItemProxy */;
+		};
+		459C48392CB46FD3000377D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 459C48332CB46FD3000377D3 /* UseCases */;
+			targetProxy = 459C48382CB46FD3000377D3 /* PBXContainerItemProxy */;
+		};
+		459C48502CB470F1000377D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 459C484A2CB470F1000377D3 /* Models */;
+			targetProxy = 459C484F2CB470F1000377D3 /* PBXContainerItemProxy */;
+		};
+		459C48622CB47183000377D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 459C485C2CB47183000377D3 /* IChatRoomService */;
+			targetProxy = 459C48612CB47183000377D3 /* PBXContainerItemProxy */;
+		};
+		459C486D2CB4734C000377D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 459C485C2CB47183000377D3 /* IChatRoomService */;
+			targetProxy = 459C486C2CB4734C000377D3 /* PBXContainerItemProxy */;
+		};
+		459C486F2CB47459000377D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 459C48332CB46FD3000377D3 /* UseCases */;
+			targetProxy = 459C486E2CB47459000377D3 /* PBXContainerItemProxy */;
 		};
 		45FA943C2CB2F4AC0045C70C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -746,6 +1041,222 @@
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ahmettarik.application.viper.IChatRoomLogin;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		459C483D2CB46FD3000377D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = N2G2NDDG29;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmettarik.application.viper.UseCases;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		459C483E2CB46FD3000377D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = N2G2NDDG29;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmettarik.application.viper.UseCases;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		459C48542CB470F1000377D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = N2G2NDDG29;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmettarik.application.viper.Models;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		459C48552CB470F1000377D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = N2G2NDDG29;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmettarik.application.viper.Models;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		459C48662CB47183000377D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = N2G2NDDG29;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmettarik.application.viper.IChatRoomService;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		459C48672CB47183000377D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = N2G2NDDG29;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmettarik.application.viper.IChatRoomService;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1177,6 +1688,33 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		459C483C2CB46FD3000377D3 /* Build configuration list for PBXNativeTarget "UseCases" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				459C483D2CB46FD3000377D3 /* Debug */,
+				459C483E2CB46FD3000377D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		459C48532CB470F1000377D3 /* Build configuration list for PBXNativeTarget "Models" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				459C48542CB470F1000377D3 /* Debug */,
+				459C48552CB470F1000377D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		459C48652CB47183000377D3 /* Build configuration list for PBXNativeTarget "IChatRoomService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				459C48662CB47183000377D3 /* Debug */,
+				459C48672CB47183000377D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		45FA94132CB2F3870045C70C /* Build configuration list for PBXProject "iChatApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1278,6 +1816,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 459C48262CB4599D000377D3 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */;
 			productName = SocketIO;
+		};
+		459C48422CB47094000377D3 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 459C48192CB458D5000377D3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		459C48442CB47094000377D3 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 459C48192CB458D5000377D3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
