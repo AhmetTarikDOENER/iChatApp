@@ -12,8 +12,8 @@
 		459C47AF2CB4131B000377D3 /* IChatRoomLogin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 459C47A82CB4131B000377D3 /* IChatRoomLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		459C47B42CB41357000377D3 /* IChatRoomLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 459C47B32CB41357000377D3 /* IChatRoomLogin.storyboard */; };
 		459C47B62CB41383000377D3 /* IChatRoomLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459C47B52CB41383000377D3 /* IChatRoomLoginViewController.swift */; };
-		459C47B92CB41478000377D3 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459C47B72CB413BC000377D3 /* Builder.swift */; };
-		459C47BF2CB41505000377D3 /* IChatRoomLogin.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 459C47BE2CB41505000377D3 /* IChatRoomLogin.xcassets */; };
+		459C47D32CB423E4000377D3 /* IChatRoomLogin.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 459C47BE2CB41505000377D3 /* IChatRoomLogin.xcassets */; };
+		459C47E12CB42DBB000377D3 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459C47B72CB413BC000377D3 /* Builder.swift */; };
 		45FA941C2CB2F3870045C70C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA941B2CB2F3870045C70C /* AppDelegate.swift */; };
 		45FA941E2CB2F3870045C70C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA941D2CB2F3870045C70C /* SceneDelegate.swift */; };
 		45FA94202CB2F3870045C70C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA941F2CB2F3870045C70C /* ViewController.swift */; };
@@ -63,6 +63,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 45FA946A2CB2FB990045C70C;
 			remoteInfo = Utility;
+		};
+		459C47CB2CB4223E000377D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45FA94102CB2F3870045C70C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45FA94502CB2FA200045C70C;
+			remoteInfo = Landing;
+		};
+		459C47E32CB42DEA000377D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45FA94102CB2F3870045C70C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 459C47A72CB4131B000377D3;
+			remoteInfo = IChatRoomLogin;
 		};
 		45FA943B2CB2F4AC0045C70C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -373,6 +387,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				459C47E42CB42DEA000377D3 /* PBXTargetDependency */,
+				459C47CC2CB4223E000377D3 /* PBXTargetDependency */,
 			);
 			name = Window;
 			productName = Window;
@@ -472,6 +488,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				459C47D32CB423E4000377D3 /* IChatRoomLogin.xcassets in Resources */,
 				459C47B42CB41357000377D3 /* IChatRoomLogin.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,7 +499,6 @@
 			files = (
 				45FA94252CB2F3880045C70C /* Assets.xcassets in Resources */,
 				45FA94282CB2F3880045C70C /* Base in Resources */,
-				459C47BF2CB41505000377D3 /* IChatRoomLogin.xcassets in Resources */,
 				45FA94232CB2F3870045C70C /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,7 +534,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				459C47B62CB41383000377D3 /* IChatRoomLoginViewController.swift in Sources */,
-				459C47B92CB41478000377D3 /* Builder.swift in Sources */,
+				459C47E12CB42DBB000377D3 /* Builder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,6 +595,16 @@
 			isa = PBXTargetDependency;
 			target = 45FA946A2CB2FB990045C70C /* Utility */;
 			targetProxy = 459C47BC2CB414C6000377D3 /* PBXContainerItemProxy */;
+		};
+		459C47CC2CB4223E000377D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45FA94502CB2FA200045C70C /* Landing */;
+			targetProxy = 459C47CB2CB4223E000377D3 /* PBXContainerItemProxy */;
+		};
+		459C47E42CB42DEA000377D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 459C47A72CB4131B000377D3 /* IChatRoomLogin */;
+			targetProxy = 459C47E32CB42DEA000377D3 /* PBXContainerItemProxy */;
 		};
 		45FA943C2CB2F4AC0045C70C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

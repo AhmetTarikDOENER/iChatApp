@@ -2,6 +2,7 @@ import Foundation
 
 protocol Routing {
     func routeToLandingPage()
+    func routeToLogin()
 }
 
 final class Presenter: Presentation {

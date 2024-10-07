@@ -53,6 +53,9 @@
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                     <color key="baseBackgroundColor" systemColor="scrollViewTexturedBackgroundColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="onStartTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="yHc-80-rrk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>

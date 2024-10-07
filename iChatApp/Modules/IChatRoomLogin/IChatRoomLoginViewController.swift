@@ -9,8 +9,14 @@ final class IChatRoomLoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
+    }
+}
+
+extension IChatRoomLoginViewController {
+    private func setupUI() {
+        avatarImageView.image = UIImage(named: "male_icon", in: Bundle(for: IChatRoomLoginViewController.self), with: nil)
     }
 }

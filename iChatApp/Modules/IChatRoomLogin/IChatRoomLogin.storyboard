@@ -11,7 +11,7 @@
         <!--Chat Room Login View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="IChatRoomLoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="IChatRoomLoginViewController" customModule="IChatRoomLogin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IChatRoomLoginViewController" id="Y6W-OH-hqX" customClass="IChatRoomLoginViewController" customModule="IChatRoomLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,6 +67,9 @@
                                 <buttonConfiguration key="configuration" style="gray" title="Login" cornerStyle="capsule">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="onStartTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="fHI-u3-RqY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
