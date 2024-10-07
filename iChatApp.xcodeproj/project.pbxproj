@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		459C47AB2CB4131B000377D3 /* IChatRoomLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 459C47AA2CB4131B000377D3 /* IChatRoomLogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		459C47AE2CB4131B000377D3 /* IChatRoomLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459C47A82CB4131B000377D3 /* IChatRoomLogin.framework */; };
 		459C47AF2CB4131B000377D3 /* IChatRoomLogin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 459C47A82CB4131B000377D3 /* IChatRoomLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		459C47B42CB41357000377D3 /* IChatRoomLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 459C47B32CB41357000377D3 /* IChatRoomLogin.storyboard */; };
 		459C47B62CB41383000377D3 /* IChatRoomLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459C47B52CB41383000377D3 /* IChatRoomLoginViewController.swift */; };
 		459C47D32CB423E4000377D3 /* IChatRoomLogin.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 459C47BE2CB41505000377D3 /* IChatRoomLogin.xcassets */; };
 		459C47E12CB42DBB000377D3 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459C47B72CB413BC000377D3 /* Builder.swift */; };
+		459C481B2CB458D5000377D3 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 459C481A2CB458D5000377D3 /* RxCocoa */; };
+		459C481D2CB458D5000377D3 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 459C481C2CB458D5000377D3 /* RxRelay */; };
+		459C481F2CB458D5000377D3 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 459C481E2CB458D5000377D3 /* RxSwift */; };
+		459C48212CB45916000377D3 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 459C48202CB45916000377D3 /* RxCocoa */; settings = {ATTRIBUTES = (Required, ); }; };
+		459C48232CB45916000377D3 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 459C48222CB45916000377D3 /* RxRelay */; settings = {ATTRIBUTES = (Required, ); }; };
+		459C48252CB45916000377D3 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 459C48242CB45916000377D3 /* RxSwift */; settings = {ATTRIBUTES = (Required, ); }; };
+		459C48282CB4599D000377D3 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 459C48272CB4599D000377D3 /* SocketIO */; };
+		459C482A2CB45E31000377D3 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459C48292CB45E31000377D3 /* Presenter.swift */; };
+		459C482C2CB45FFC000377D3 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459C482B2CB45FFC000377D3 /* Router.swift */; };
 		45FA941C2CB2F3870045C70C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA941B2CB2F3870045C70C /* AppDelegate.swift */; };
 		45FA941E2CB2F3870045C70C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA941D2CB2F3870045C70C /* SceneDelegate.swift */; };
 		45FA94202CB2F3870045C70C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA941F2CB2F3870045C70C /* ViewController.swift */; };
@@ -22,7 +30,6 @@
 		45FA94282CB2F3880045C70C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 45FA94272CB2F3880045C70C /* Base */; };
 		45FA94392CB2F4AC0045C70C /* Window.docc in Sources */ = {isa = PBXBuildFile; fileRef = 45FA94382CB2F4AC0045C70C /* Window.docc */; };
 		45FA943A2CB2F4AC0045C70C /* Window.h in Headers */ = {isa = PBXBuildFile; fileRef = 45FA94372CB2F4AC0045C70C /* Window.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		45FA943D2CB2F4AC0045C70C /* Window.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FA94352CB2F4AC0045C70C /* Window.framework */; };
 		45FA943E2CB2F4AC0045C70C /* Window.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 45FA94352CB2F4AC0045C70C /* Window.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45FA94442CB2F5AD0045C70C /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA94432CB2F5AD0045C70C /* Window.swift */; };
 		45FA94462CB2F61B0045C70C /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA94452CB2F61B0045C70C /* Presenter.swift */; };
@@ -30,12 +37,10 @@
 		45FA944B2CB2F7250045C70C /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA944A2CB2F7250045C70C /* Builder.swift */; };
 		45FA94552CB2FA200045C70C /* Landing.docc in Sources */ = {isa = PBXBuildFile; fileRef = 45FA94542CB2FA200045C70C /* Landing.docc */; };
 		45FA94562CB2FA200045C70C /* Landing.h in Headers */ = {isa = PBXBuildFile; fileRef = 45FA94532CB2FA200045C70C /* Landing.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		45FA94592CB2FA200045C70C /* Landing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FA94512CB2FA200045C70C /* Landing.framework */; };
 		45FA945A2CB2FA200045C70C /* Landing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 45FA94512CB2FA200045C70C /* Landing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45FA945F2CB2FA7C0045C70C /* Landing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45FA945E2CB2FA7B0045C70C /* Landing.storyboard */; };
 		45FA94652CB2FB210045C70C /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA94642CB2FB210045C70C /* Builder.swift */; };
 		45FA946E2CB2FB990045C70C /* Utility.h in Headers */ = {isa = PBXBuildFile; fileRef = 45FA946D2CB2FB990045C70C /* Utility.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		45FA94712CB2FB990045C70C /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FA946B2CB2FB990045C70C /* Utility.framework */; };
 		45FA94722CB2FB990045C70C /* Utility.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 45FA946B2CB2FB990045C70C /* Utility.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45FA94782CB2FBD50045C70C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA94772CB2FBD50045C70C /* UIViewController+Extension.swift */; };
 		45FA94792CB307D50045C70C /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA94602CB2FAB00045C70C /* LandingViewController.swift */; };
@@ -125,6 +130,8 @@
 		459C47B52CB41383000377D3 /* IChatRoomLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IChatRoomLoginViewController.swift; sourceTree = "<group>"; };
 		459C47B72CB413BC000377D3 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		459C47BE2CB41505000377D3 /* IChatRoomLogin.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = IChatRoomLogin.xcassets; sourceTree = "<group>"; };
+		459C48292CB45E31000377D3 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		459C482B2CB45FFC000377D3 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		45FA94182CB2F3870045C70C /* iChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45FA941B2CB2F3870045C70C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45FA941D2CB2F3870045C70C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +164,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				459C48252CB45916000377D3 /* RxSwift in Frameworks */,
+				459C48232CB45916000377D3 /* RxRelay in Frameworks */,
+				459C48212CB45916000377D3 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,10 +174,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45FA94712CB2FB990045C70C /* Utility.framework in Frameworks */,
-				45FA94592CB2FA200045C70C /* Landing.framework in Frameworks */,
-				45FA943D2CB2F4AC0045C70C /* Window.framework in Frameworks */,
-				459C47AE2CB4131B000377D3 /* IChatRoomLogin.framework in Frameworks */,
+				459C481F2CB458D5000377D3 /* RxSwift in Frameworks */,
+				459C48282CB4599D000377D3 /* SocketIO in Frameworks */,
+				459C481D2CB458D5000377D3 /* RxRelay in Frameworks */,
+				459C481B2CB458D5000377D3 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,13 +208,22 @@
 		459C47A92CB4131B000377D3 /* IChatRoomLogin */ = {
 			isa = PBXGroup;
 			children = (
+				459C47B72CB413BC000377D3 /* Builder.swift */,
 				459C47AA2CB4131B000377D3 /* IChatRoomLogin.h */,
 				459C47B32CB41357000377D3 /* IChatRoomLogin.storyboard */,
-				459C47B52CB41383000377D3 /* IChatRoomLoginViewController.swift */,
-				459C47B72CB413BC000377D3 /* Builder.swift */,
 				459C47BE2CB41505000377D3 /* IChatRoomLogin.xcassets */,
+				459C47B52CB41383000377D3 /* IChatRoomLoginViewController.swift */,
+				459C48292CB45E31000377D3 /* Presenter.swift */,
+				459C482B2CB45FFC000377D3 /* Router.swift */,
 			);
 			path = IChatRoomLogin;
+			sourceTree = "<group>";
+		};
+		459C48012CB456FC000377D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		45FA940F2CB2F3870045C70C = {
@@ -212,6 +231,7 @@
 			children = (
 				45FA941A2CB2F3870045C70C /* iChatApp */,
 				45FA94192CB2F3870045C70C /* Products */,
+				459C48012CB456FC000377D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -349,6 +369,11 @@
 				459C47BD2CB414C6000377D3 /* PBXTargetDependency */,
 			);
 			name = IChatRoomLogin;
+			packageProductDependencies = (
+				459C48202CB45916000377D3 /* RxCocoa */,
+				459C48222CB45916000377D3 /* RxRelay */,
+				459C48242CB45916000377D3 /* RxSwift */,
+			);
 			productName = IChatRoomLogin;
 			productReference = 459C47A82CB4131B000377D3 /* IChatRoomLogin.framework */;
 			productType = "com.apple.product-type.framework";
@@ -371,6 +396,12 @@
 				459C47AD2CB4131B000377D3 /* PBXTargetDependency */,
 			);
 			name = iChatApp;
+			packageProductDependencies = (
+				459C481A2CB458D5000377D3 /* RxCocoa */,
+				459C481C2CB458D5000377D3 /* RxRelay */,
+				459C481E2CB458D5000377D3 /* RxSwift */,
+				459C48272CB4599D000377D3 /* SocketIO */,
+			);
 			productName = iChatApp;
 			productReference = 45FA94182CB2F3870045C70C /* iChatApp.app */;
 			productType = "com.apple.product-type.application";
@@ -470,6 +501,10 @@
 				Base,
 			);
 			mainGroup = 45FA940F2CB2F3870045C70C;
+			packageReferences = (
+				459C48192CB458D5000377D3 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				459C48262CB4599D000377D3 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */,
+			);
 			productRefGroup = 45FA94192CB2F3870045C70C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -533,6 +568,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				459C482C2CB45FFC000377D3 /* Router.swift in Sources */,
+				459C482A2CB45E31000377D3 /* Presenter.swift in Sources */,
 				459C47B62CB41383000377D3 /* IChatRoomLoginViewController.swift in Sources */,
 				459C47E12CB42DBB000377D3 /* Builder.swift in Sources */,
 			);
@@ -1182,6 +1219,63 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		459C48192CB458D5000377D3 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.8.0;
+			};
+		};
+		459C48262CB4599D000377D3 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		459C481A2CB458D5000377D3 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 459C48192CB458D5000377D3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		459C481C2CB458D5000377D3 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 459C48192CB458D5000377D3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		459C481E2CB458D5000377D3 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 459C48192CB458D5000377D3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		459C48202CB45916000377D3 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 459C48192CB458D5000377D3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		459C48222CB45916000377D3 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 459C48192CB458D5000377D3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		459C48242CB45916000377D3 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 459C48192CB458D5000377D3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		459C48272CB4599D000377D3 /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 459C48262CB4599D000377D3 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */;
+			productName = SocketIO;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 45FA94102CB2F3870045C70C /* Project object */;
 }

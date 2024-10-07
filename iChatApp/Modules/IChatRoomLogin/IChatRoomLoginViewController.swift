@@ -1,4 +1,6 @@
 import UIKit
+@_implementationOnly import RxCocoa
+@_implementationOnly import RxSwift
 
 final class IChatRoomLoginViewController: UIViewController {
     

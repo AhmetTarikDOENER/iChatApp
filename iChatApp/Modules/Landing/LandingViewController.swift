@@ -23,6 +23,5 @@ final class LandingViewController: UIViewController {
 private extension LandingViewController {
     func setupUI() {
         logoImageView.image = UIImage(named: "appstore", in: Bundle(for: LandingViewController.self), with: nil)
-        
     }
 }
