@@ -1,8 +1,15 @@
 import Foundation
+@_implementationOnly import RxCocoa
+@_implementationOnly import RxSwift
 
 protocol Presentation {
-    typealias Input = ()
-    typealias Output = ()
+    typealias Input = (
+        username: Driver<String>,
+        email: Driver<String>
+    )
+    typealias Output = (
+        enableLogin: Driver<Bool>, ()
+    )
     typealias Producer = (Presentation.Input) -> Presentation
     var input: Input { get }
     var output: Output { get }
@@ -26,7 +33,10 @@ final class Presenter: Presentation {
 
 private extension Presenter {
     static func output(input: Input) -> Output {
-        return ()
+        let enableLoginDriver = Driver.combineLatest(input.username.map({ !$0.isEmpty }), input.email.map({ $0.isEmail() })).map({ $0 && $1 })
+        return (
+            enableLogin: Driver.never(), ()
+        )
     }
     
     func process() {

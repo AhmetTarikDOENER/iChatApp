@@ -22,6 +22,7 @@
 		459C48282CB4599D000377D3 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 459C48272CB4599D000377D3 /* SocketIO */; };
 		459C482A2CB45E31000377D3 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459C48292CB45E31000377D3 /* Presenter.swift */; };
 		459C482C2CB45FFC000377D3 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459C482B2CB45FFC000377D3 /* Router.swift */; };
+		459C482E2CB469F2000377D3 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459C482D2CB469F2000377D3 /* String+Extension.swift */; };
 		45FA941C2CB2F3870045C70C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA941B2CB2F3870045C70C /* AppDelegate.swift */; };
 		45FA941E2CB2F3870045C70C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA941D2CB2F3870045C70C /* SceneDelegate.swift */; };
 		45FA94202CB2F3870045C70C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA941F2CB2F3870045C70C /* ViewController.swift */; };
@@ -132,6 +133,7 @@
 		459C47BE2CB41505000377D3 /* IChatRoomLogin.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = IChatRoomLogin.xcassets; sourceTree = "<group>"; };
 		459C48292CB45E31000377D3 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		459C482B2CB45FFC000377D3 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		459C482D2CB469F2000377D3 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		45FA94182CB2F3870045C70C /* iChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45FA941B2CB2F3870045C70C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45FA941D2CB2F3870045C70C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 			children = (
 				45FA946D2CB2FB990045C70C /* Utility.h */,
 				45FA94772CB2FBD50045C70C /* UIViewController+Extension.swift */,
+				459C482D2CB469F2000377D3 /* String+Extension.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -611,6 +614,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				459C482E2CB469F2000377D3 /* String+Extension.swift in Sources */,
 				45FA94782CB2FBD50045C70C /* UIViewController+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

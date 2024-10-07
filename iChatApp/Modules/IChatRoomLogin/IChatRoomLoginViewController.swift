@@ -11,14 +11,34 @@ final class IChatRoomLoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     
+    private var presenter: Presentation!
+    var presenterProcuder: Presentation.Producer!
+    private let bag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter = presenterProcuder((
+            username: usernameTextField.rx.text.orEmpty.asDriver(),
+            email: emailTextField.rx.text.orEmpty.asDriver()
+        ))
         setupUI()
+        setupBinding()
+    }
+    
+    @IBAction func didTapLogin(_ sender: UIButton) {
+        
     }
 }
 
-extension IChatRoomLoginViewController {
+private extension IChatRoomLoginViewController {
     private func setupUI() {
         avatarImageView.image = UIImage(named: "male_icon", in: Bundle(for: IChatRoomLoginViewController.self), with: nil)
+    }
+    
+    func setupBinding() {
+        presenter.output.enableLogin
+            .debug("Enable Login Driver", trimOutput: false)
+            .drive(loginButton.rx.isEnabled)
+            .disposed(by: bag)
     }
 }
