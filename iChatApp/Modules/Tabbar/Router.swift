@@ -20,7 +20,7 @@ extension Router: Routing {
 }
 
 extension Router {
-    static func tabs(using subModules: SubModules) -> IChatTabs {
+    static func tabs(for subModules: SubModules) -> IChatTabs {
         return ()
     }
 }

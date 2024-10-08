@@ -7,6 +7,8 @@ protocol TabbarView: AnyObject {
 }
 
 final class IChatTabbarViewController: UITabBarController {
+    
+    var presenter: Presentation?
 
     init(tabs: IChatTabs) {
         super.init(nibName: nil, bundle: nil)
