@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		457E090F2CB52F1000B42258 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 457E090E2CB52F1000B42258 /* SocketIO */; };
 		459C47AB2CB4131B000377D3 /* IChatRoomLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 459C47AA2CB4131B000377D3 /* IChatRoomLogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		459C47AF2CB4131B000377D3 /* IChatRoomLogin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 459C47A82CB4131B000377D3 /* IChatRoomLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		459C47B42CB41357000377D3 /* IChatRoomLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 459C47B32CB41357000377D3 /* IChatRoomLogin.storyboard */; };
@@ -255,6 +256,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				457E090F2CB52F1000B42258 /* SocketIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,8 +351,6 @@
 			isa = PBXGroup;
 			children = (
 				45FA941A2CB2F3870045C70C /* iChatApp */,
-				459C484C2CB470F1000377D3 /* Models */,
-				459C485E2CB47183000377D3 /* IChatRoomService */,
 				45FA94192CB2F3870045C70C /* Products */,
 				459C48012CB456FC000377D3 /* Frameworks */,
 			);
@@ -389,6 +389,8 @@
 		45FA942F2CB2F46C0045C70C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				459C485E2CB47183000377D3 /* IChatRoomService */,
+				459C484C2CB470F1000377D3 /* Models */,
 				459C47A92CB4131B000377D3 /* IChatRoomLogin */,
 				45FA94522CB2FA200045C70C /* Landing */,
 				45FA94762CB2FBA40045C70C /* Shared */,
@@ -584,6 +586,9 @@
 			dependencies = (
 			);
 			name = IChatRoomService;
+			packageProductDependencies = (
+				457E090E2CB52F1000B42258 /* SocketIO */,
+			);
 			productName = IChatRoomService;
 			productReference = 459C485D2CB47183000377D3 /* IChatRoomService.framework */;
 			productType = "com.apple.product-type.framework";
@@ -1782,6 +1787,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		457E090E2CB52F1000B42258 /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 459C48262CB4599D000377D3 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */;
+			productName = SocketIO;
+		};
 		459C481A2CB458D5000377D3 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 459C48192CB458D5000377D3 /* XCRemoteSwiftPackageReference "RxSwift" */;
