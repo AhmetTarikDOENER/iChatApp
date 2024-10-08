@@ -49,7 +49,10 @@ private extension Presenter {
             .asObservable()
             .flatMap { [useCases] (username, email) in
                 useCases.login(username, email)
-            }.asDriver(onErrorDriveWith: .never())
+            }.map({ (_) in
+                #warning("TODO: Route to tabbar scene")
+            })
+            .asDriver(onErrorDriveWith: .never())
             .drive()
             .disposed(by: bag)
     }
