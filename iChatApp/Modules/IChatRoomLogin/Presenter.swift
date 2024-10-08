@@ -50,7 +50,7 @@ private extension Presenter {
             .flatMap { [useCases] (username, email) in
                 useCases.login(username, email)
             }.map({ (_) in
-                #warning("TODO: Route to tabbar scene")
+                self.router.routeToWindow()
             })
             .asDriver(onErrorDriveWith: .never())
             .drive()

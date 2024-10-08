@@ -16,7 +16,6 @@ public final class AccountInteractor {
 
 public extension AccountInteractor {
     func login(username: String, email: String) -> Single<()> {
-        self.chatService.login(username: username, email: email)
         return self.chatService.socketResponse.filter {
             guard case .loggedIn = $0 else { return false }
             return true
@@ -27,6 +26,9 @@ public extension AccountInteractor {
         .take(1)
         .flatMap(saveUser(user:))
         .asSingle()
+        .do { [weak self] in
+            self?.chatService.login(username: username, email: email)
+        }
     }
 }
 

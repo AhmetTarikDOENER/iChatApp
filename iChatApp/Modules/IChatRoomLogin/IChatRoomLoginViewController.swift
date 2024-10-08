@@ -38,7 +38,6 @@ private extension IChatRoomLoginViewController {
     
     func setupBinding() {
         presenter.output.enableLogin
-            .debug("Enable Login Driver", trimOutput: false)
             .drive(loginButton.rx.isEnabled)
             .disposed(by: bag)
     }
